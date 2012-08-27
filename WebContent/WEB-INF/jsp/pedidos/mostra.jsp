@@ -1,4 +1,4 @@
-<table>
+<table id="infoBasica">
     <tbody>
     	<tr>
             <th>Nome do Cliente</th>
@@ -15,12 +15,12 @@
 	</tbody>
 </table>
 
-<table>
+<table id="itensDoPedido">
     <thead>
         <tr>
             <th>Item</th>
             <th>Qtd</th>
-            <th>Unitátio</th>
+            <th>Preco Unitario</th>
             <th>Total</th>
         </tr>
     </thead>

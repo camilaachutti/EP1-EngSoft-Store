@@ -1,18 +1,26 @@
 <form action="<c:url value="/pedidos"/>" method="POST">
 	<fieldset>
-		<legend>Adicionar Pedido</legend>
+		<legend>Novo Pedido</legend>
+		
+		<div class="field">
+			<div class="label"><label for="cliente">Cliente:</label></div>
+			<div class="input">
+				<input id="cliente" type="text" name="pedido.nomeCliente" value="${pedido.nome}" />
+			</div> 
+		</div>
+		
+		<div class="field">
+			<div class="label"><label for="data">Data:</label></div>
+		  	<div class="input"><input id="data" type="text" name="pedido.data" value="${pedido.data}" /></div>
+		</div>
 
-		<label for="cliente">Cliente:</label> <input id="cliente" type="text"
-			name="pedido.nomeCliente" value="${pedido.nome}" /> <label for="data">Data:</label>
-		<input id="data" type="text" name="pedido.data" value="${pedido.data}" />
 
-
-		<table>
+		<table id="itens">
 			<thead>
 				<tr>
 					<th>Item</th>
-					<th>Qtd</th>
-					<th>Unitario</th>
+					<th>Quantidade</th>
+					<th>Preco Unitario</th>
 				</tr>
 
 			</thead>

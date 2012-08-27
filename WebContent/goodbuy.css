@@ -1,110 +1,127 @@
-*{margin:0px; padding:0px; font-family:Arial, Helvetica, sans-serif;}
+*{
+	margin:0px;
+	padding:0px; 
+	font-family:Helvetica, sans-serif;
+}
+
+body {
+	background-color: #FAFAFA;
+}
+
+#wrapper {
+	width: 920px;
+	padding: 0 20px;
+	margin: 20px auto;	
+}
 
 #header {
-	height: 100px;
-	background-color: navy;
-}
-#carrinho {
-	height: 80px;
-	background-color: #dcdee0;
-	width: 300px;
-	margin: 10px;
-	float: right;
-	border: 1px solid gray;
-	-moz-border-radius: 10px;
+
 }
 
-#carrinho h3 a {
-	color: navy;
+#header h1 {
+	color: black;
+	padding: 20px 0;
+	display: inline-block;
+	vertical-align: middle;
+	font-weight: 400;
+	margin-left: 20px;
 }
-#carrinho h3 {
-	margin: 10px;
+
+#menu {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 408px;
 }
-#carrinho span {
-	margin: 10px;	
-}
-#carrinho ul {
+
+#menu ul {
 	list-style: none;
-	padding-left: 10px;
-}
-#carrinho li {
-	float: left;
-	margin-right: 20px;	
+	background-color: white;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	box-shadow: 0 1px 2px gray;
 }
 
-#usuario {
-	float: left;
-	heigth: 50px;
-	background-color: #dcdee0;
-	margin: 10px;
-	padding: 5px;
-	border: 1px solid gray;
-	-moz-border-radius: 5px;	
+#menu li {
+	display: inline-block;
+	padding: 10px;
 }
+
+#menu a {
+	text-decoration: none;
+	color: black;
+}
+
+#menu a:hover {
+	color: gray;
+}
+
+#content {
+	background-color: white;
+	padding: 20px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	box-shadow: 0 1px 2px gray;
+}
+
+#listaDePedidos thead {
+	background-color: #2a2948;
+	color: white;
+	font-weight: bold;
+}
+
+#listaDePedidos tbody tr:nth-child(even) {
+	background-color: #E6E8EB;
+}
+
+#listaDePedidos tbody td {
+	padding: 5px 10px;	
+}
+
+#listaDePedidos th {
+	background-color: #2a2948;
+	color: white;
+	font-weight: bold;
+	padding: 5px 10px;
+	min-width: 100px;
+}
+
+#listaDePedidos #nomeDoCliente {
+	width: 500px;
+	text-align: left;
+}
+
+#listaDePedidos a {
+	text-decoration: none;
+	color: black;
+}
+
+#listaDePedidos a:hover {
+	color: gray;
+}
+
 #erros {
 	background-color: red;
 }
 
 #footer {
-	border-top: 1px solid gray;
 	clear:both;
 }
-body {
-	background-color: navy;
-}
-#body {
-	border-top: 1px solid gray;
-	width: 100%;
-	margin: 0 auto;
-	min-height: 300px;
-	padding: 10px 0;
-	float:left;
-	background-color: #dcdee0;
+
+.field {
+	margin: 10px 0;
 }
 
-#content {
-	float:left;
-	padding-left: 10px;
-}
-
-#menu {
-	padding-left: 15px;
-	margin-bottom: 20px;
-}
-
-#menu > ul {
-	list-style: none;
-}
-#menu > ul > li {
+.input, .label {
 	display: inline-block;
-	vertical-align:top;
-	border-top: 2px solid white;
-	padding: 5px;
-	-moz-border-radius: 0 5px 5px 0;
-	background-color: #5dAA7B;
+	vertical-align: middle;
 }
-#menu > ul > li:hover {
-	background-color: #5d5c7B;
+
+.label {
+	width: 60px;	
 }
-#menu > ul > li:last-child {
-	-moz-border-radius: 0 0 5px 0;
-}
-#menu > ul > li:first-child {
-	-moz-border-radius: 0 5px 0 0;
-	border-top: none;
-}
-#menu li a {
-	color: white;
-	text-decoration: none;
-}
-.link {
-	text-decoration: underline;
-	border: none;
-	background: none;
-	color: blue;
-	cursor: pointer;
-	padding:0;
-	margin:0;
+
+.input input {
+	font-size: 18px;
 }
 
 input:FOCUS, textarea:FOCUS {
@@ -127,38 +144,63 @@ input.qtde {
 label.error {
 	color:red;	
 }
+
 fieldset {
 	border:none;
 	padding: 10px;
-	width: 700px;
-	border-top: 3px solid #365372;
+	width: 850px;
+	border-top: 2px solid black;
 }
 
 fieldset legend {
 	border: 1px solid #365372;
 	-moz-border-radius: 3px;
-	background-color: #c7c9cb;
+	border-radius: 3px;
+	background-color: #D7D8D9;
 	font-weight: bold;
-	padding: 3px;
-	margin-bottom: 15px;
+	padding: 5px 10px;
 	font-size: 16pt;
-	color: #365372;
+	color: black;
+	margin-bottom: 40px;
 }
 
-table thead {
-	background-color: #2a2948;
-	color: white;
-	font-weight: bold;
+#itens {
+	margin-top: 20px
 }
 
-table tbody tr:nth-child(even) {
-	background-color: #a29bc0;
+#itens td {
+	padding: 3px;
 }
-table tbody td {
-	vertical-align: text-bottom;	
+
+#itens input {
+	font-size: 18px;
 }
-table tfoot th {
-	background-color: #2a2948;
-	color: white;
-	font-weight: bold;
+#itens th {
+	text-align: left;
+	font-weight: normal;
+}
+
+form button {
+	margin-top: 10px;
+	font-size: 16px;
+	padding: 5px 10px;
+}
+
+#infoBasica {
+	margin-bottom: 20px;
+}
+
+#infoBasica th {
+	width: 150px;
+	text-align: left;	
+}
+
+#itensDoPedido th{
+	text-align: left;
+	padding-right: 15px;
+}
+
+#itensDoPedido td {
+	padding-right: 15px;
+	padding-bottom: 5px;
 }

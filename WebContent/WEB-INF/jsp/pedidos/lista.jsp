@@ -1,10 +1,10 @@
-<table>
+<table id="listaDePedidos">
     <thead>
         <tr>
-            <th>Nome do Cliente</th>
-            <th>Data</th>
-            <th>Qtd. Itens</th>
-            <th>Valor Total</th>
+            <th id="nomeDoCliente">Nome do Cliente</th>
+            <th id="data">Data</th>
+            <th id="quantidade">Qtd. Itens</th>
+            <th id="valorTotal">Valor Total</th>
         </tr>
     </thead>
     <tbody>
