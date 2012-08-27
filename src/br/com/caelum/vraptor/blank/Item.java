@@ -17,6 +17,14 @@ public class Item {
 	@ManyToOne
 	private Pedido pedido;
 	
+	public Item(){
+		
+	}
+	public Item(Integer quantidade, double preco){
+		this.quantidade = quantidade;
+		this.preco = preco;
+	}
+	
 	public String getDescricao() {
 		return descricao;
 	}

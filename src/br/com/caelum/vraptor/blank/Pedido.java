@@ -52,8 +52,8 @@ public class Pedido {
 		return "Pedido "+ id + " ("+ nomeCliente + ", " + data + ")"; 
 	}
 	
-	public Double calculaValorTotal() {
-		Double valorTotal = 0.0; 
+	public double calculaValorTotal() {
+		double valorTotal = 0.0; 
 		
 		for(Item item : itens){
 			valorTotal += (item.getPreco() * item.getQuantidade());
